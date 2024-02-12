@@ -1,15 +1,25 @@
+/* Define custom variables */
+:root {
+    --primary-color: #3498db;/blue
+    --secondary-color: #2ecc71;green
+    --text-color: #333;brown
+    --bg-color: #f9f9f9;white
+
+/* Basic styling */
 body {
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: whitesmoke;
-    color: rgb(23, 17, 17)
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
+
 header {
     text-align: center;
     padding: 20px 0;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -17,57 +27,76 @@ nav ul {
     display: flex;
     justify-content: center;
 }
+
 nav a {
     text-decoration: none;
+    color: var(--text-color);
     padding: 10px 20px;
+    border: 1px solid var(--text-color);
     border-radius: 5px;
     margin: 0 5px;
     transition: all 0.3s ease;
 }
+
 nav a:hover {
-    background-color: whitesmoke;
+    background-color: var(--primary-color);
     color: white;
 }
+
 main {
     width: 90%;
     margin: 0 auto;
 }
+
 article {
     margin-bottom: 30px;
 }
+
 h2 {
-    color: whitesmoke;
+    color: var(--primary-color);
 }
+
 p {
     line-height: 1.6;
 }
+
 footer {
     text-align: center;
     padding: 20px 0;
+    background-color: var(--primary-color);
+    color: white;
 }
+
 footer a {
     color: white;
     text-decoration: none;
     margin-left: 10px;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
-@media all and(max-width: 768px) {
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
     body {
         font-size: 14px;
     }
+    
     header {
         padding: 10px 0;
     }
+    
     nav a {
         padding: 8px 15px;
     }
 }
-@media all and(max-width: 576px) {
+
+@media (max-width: 576px) {
     body {
         font-size: 12px;
     }
+    
     nav a {
         padding: 6px 12px;
     }
