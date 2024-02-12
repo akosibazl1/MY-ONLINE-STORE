@@ -1,0 +1,86 @@
+/* Basic Styling */
+body {
+    width: 100%;
+    max-width: 890px;
+    margin: 0 auto;
+    background-image: url('pc.jpg');
+    color: var(--main-text-color);
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    padding: 0 20px; /* Add padding for better mobile view */
+    background-color: rgb(92, 70, 110);
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--main-text-color);
+    padding: 10px 20px;
+    border: 1px solid var(--main-text-color);
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--main-text-color);
+    color: #fff;
+}
+
+/* Responsive Web Design */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Responsive Cards */
+figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+/* Pseudo-classes and Pseudo-elements */
+nav a::before {
+    content: "\2022"; /* Bullet character */
+    margin-right: 5px;
+}
+
+/* Custom Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #ddd;
+}
+
+footer a {
+    color: var(--link-color);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* CSS Functions */
+nav a {
+    background-color: hsl(210, 40%, 80%); /* Light blue background */
+    color: hsl(210, 50%, 30%); /* Dark blue text */
+    
+}
