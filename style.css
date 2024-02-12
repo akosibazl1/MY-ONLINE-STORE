@@ -1,21 +1,15 @@
-/* Basic Styling */
 body {
     width: 100%;
-    max-width: 890px;
-    margin: 0 auto;
-    background-image: url('pc.jpg');
-    color: var(--main-text-color);
-    font-family: Arial, sans-serif;
-    background-color: var(--main-bg-color);
-    padding: 0 20px; /* Add padding for better mobile view */
-    background-color: rgb(92, 70, 110);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    color: rgb(23, 17, 17)
 }
-
 header {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -23,64 +17,58 @@ nav ul {
     display: flex;
     justify-content: center;
 }
-
 nav a {
-    list-style: none;
     text-decoration: none;
-    color: var(--main-text-color);
     padding: 10px 20px;
-    border: 1px solid var(--main-text-color);
     border-radius: 5px;
     margin: 0 5px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: all 0.3s ease;
 }
-
 nav a:hover {
-    background-color: var(--main-text-color);
-    color: #fff;
+    background-color: whitesmoke;
+    color: white;
 }
-
-/* Responsive Web Design */
-@media only screen and (max-width: 600px) {
-    body {
-        padding: 0 10px; /* Adjust padding for smaller screens */
-    }
+main {
+    width: 90%;
+    margin: 0 auto;
 }
-
-/* Responsive Cards */
-figure {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+article {
+    margin-bottom: 30px;
 }
-
-figcaption {
-    margin-top: 10px;
+h2 {
+    color: whitesmoke;
 }
-
-/* Pseudo-classes and Pseudo-elements */
-nav a::before {
-    content: "\2022"; /* Bullet character */
-    margin-right: 5px;
+p {
+    line-height: 1.6;
 }
-
-/* Custom Footer Styling */
 footer {
     text-align: center;
     padding: 20px 0;
-    margin-top: 20px;
-    background-color: #ddd;
 }
-
 footer a {
-    color: var(--link-color);
+    color: white;
     text-decoration: none;
     margin-left: 10px;
 }
-
-/* CSS Functions */
-nav a {
-    background-color: hsl(210, 40%, 80%); /* Light blue background */
-    color: hsl(210, 50%, 30%); /* Dark blue text */
-    
+footer a:hover {
+    text-decoration: underline;
+}
+@media all and(max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        padding: 10px 0;
+    }
+    nav a {
+        padding: 8px 15px;
+    }
+}
+@media all and(max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+    nav a {
+        padding: 6px 12px;
+    }
 }
